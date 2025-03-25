@@ -21,4 +21,11 @@ export default defineConfigWithVueTs(
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
   skipFormatting,
+  {
+    rules: {
+      'vue/attribute-hyphenation': 'off',
+      'vue/custom-event-name-casing': 'off',
+      'vue/valid-v-slot': 'off',
+    },
+  },
 )

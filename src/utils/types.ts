@@ -4,7 +4,7 @@ export type DialogType = 'edit' | 'add'
 export type FinanceType = typeof income | typeof expense
 export type TransactionType = 'income' | 'outcome'
 export type transactionFilter = {
-  dateRange: []
+  dateRange: Array<string | Date>
   category: ''
 }
 export interface ExpansesCategory {

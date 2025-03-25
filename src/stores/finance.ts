@@ -17,7 +17,7 @@ export const useFinanceStore = defineStore('finance', {
     currentExchange: {} as ExchangeRateResponse,
     transactionToDeleteEdit: {} as Transaction,
     filters: {
-      dateRange: [],
+      dateRange: [] as Array<string | Date>,
       category: '',
     },
     loading: false,
